@@ -1,0 +1,8 @@
+#carouselExampleIndicators .carousel-inner img {
+    height: 500px; /* Ajusta la altura a lo que necesites */
+    object-fit: cover; /* Esto asegura que la imagen se recorte proporcionalmente sin deformarse */
+    width: 100%; /* Asegura que las imágenes sigan siendo responsivas */
+}
+ .titulo{
+    color: aliceblue;
+ }
