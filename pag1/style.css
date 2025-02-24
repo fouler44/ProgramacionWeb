@@ -1,8 +1,83 @@
-#carouselExampleIndicators .carousel-inner img {
-    height: 500px; /* Ajusta la altura a lo que necesites */
-    object-fit: cover; /* Esto asegura que la imagen se recorte proporcionalmente sin deformarse */
-    width: 100%; /* Asegura que las imágenes sigan siendo responsivas */
-}
- .titulo{
-    color: aliceblue;
+ body {
+    background-color: white;
  }
+
+footer {
+   background-color: rgb(75, 75, 75);
+}
+
+section {
+   background-color: ghostwhite;
+}
+
+.portada-container {
+   position: relative;
+   width: 100%;   
+}
+
+.portada {
+   width: 100%;
+   display: block;
+   clip-path: inset(0 0 36px 0); /* Recorta 50px desde abajo */
+}
+
+.sponsor-bar {
+   width: 100%;
+   overflow: hidden;
+   background: white;
+   position: absolute;
+   bottom: 36px;
+}
+
+.sponsor-track {
+   display: flex;
+   gap: 30px; /* Espaciado entre logos */
+   width: max-content;
+   animation: scroll 25s linear infinite;
+}
+
+.sponsor-track img {
+   height: 50px; /* Ajusta según necesites */
+   width: auto;
+   object-fit: contain;
+   padding: 0 2px; 
+}
+
+.sponsor-track img {
+   height: 20px; /* Ajusta según necesites */
+   width: auto;
+   object-fit: contain;
+   padding: 0 5px; 
+}
+
+@media (min-width: 768px) {
+   .sponsor-track img {
+      height: 35px; /* Ajusta según necesites */
+      width: auto;
+      object-fit: contain;
+      padding: 0 10px; 
+   }
+}
+
+@media (min-width: 1200px) {
+   .sponsor-track img {
+      height: 50px; /* Ajusta según necesites */
+      width: auto;
+      object-fit: contain;
+      padding: 0 10px; 
+   }
+}
+
+@keyframes scroll {
+   from {
+       transform: translateX(0);
+   }
+   to {
+       transform: translateX(-50%);
+   }
+}
+
+.sponsor-img-2 {
+   height: 30px !important;
+   width: auto;   
+}

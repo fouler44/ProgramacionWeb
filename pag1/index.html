@@ -5,133 +5,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primera Página</title>
-    <link rel="shortcut icon" href="/pag1/assets/img/icons8-web-100.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/pag1/assets/img/icons8-combustible-de-dallas-50.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body style="background-color: rgb(48, 54, 54);">
+<body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+    <nav id="navbar-pag" class="navbar navbar-expand-lg bg-dark border-bottom border-body sticky-top" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Guateque </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+
+            <a class="navbar-brand ms-md-5" href="index.html">
+                <img src="assets/img/g2-logo-clear.avif" alt="Bootstrap" width="35" height="40">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Productos
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">E-sports</a></li>
-                            <li><a class="dropdown-item" href="#">Equipo</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Titulos</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+
+            <div class="collapse navbar-collapse  ms-5" id="navbarNavDropdown">
+                <div class="navbar-nav fs-5 gap-5">
+                    <a class="nav-link" href="#scrollspyHeading1">Equipos</a>
+                    <a class="nav-link" href="about.html">Nosotros</a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <div class="container mb-3">
-        <h1 class="titulo">Mi Primera Pagina web</h1>
-    </div>
+    <div class="container-fluid p-0">
+        <div class="portada-container">
+            <img class="portada" src="assets/img/esport.jpg" alt="Esports">
 
-    <div class="mx-auto mb-4" style="width: 500px;">
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/pag1/assets/img/ivo.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://i.pinimg.com/736x/4c/0e/89/4c0e895c5255343ae3d7afa3365f2e0c.jpg"
-                        class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://i.pinimg.com/736x/5f/cc/85/5fcc85c9af0dc68e1969d6693bcec3de.jpg"
-                        class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
+            <div class="sponsor-bar py-2 border ">
+                <div class="sponsor-track align-items-center">
+                    <img src="assets/img/logitech-g.avif" alt="Patrocinador 1"> 
+                    <img src="assets/img/LG_Ultragear_Black.avif" alt="Patrocinador 2" class="sponsor-img-2">
+                    <img src="assets/img/hermanmiller-logo-lockup-black-digital.avif" alt="Patrocinador 3">
+                    <img src="assets/img/image_87.webp" alt="Patrocinador 4">
+                    <img src="assets/img/Spotify_Logo_RGB_Black.avif" alt="Patrocinador 5">
+                    <img src="assets/img/monster.avif" alt="Patrocinador 6">
+                    <img src="assets/img/mcdonalds.avif" alt="Patrocinador 7">
 
-    <div class="container">
-        <div class="card mb-3 mx-auto" style="max-width: 1080px;">
-            <div class="row g-0">
-                <div class="col-md-6">
-                    <img src="./assets/img/faker.webp" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-6">
-                    <div class="card-body">
-                        <h2 class="card-title">Faker</h2>
-                        <p class="card-text">Lee Sang-Hyeok (en hangul, 이상혁; Gangseo-gu, Seúl; 7 de mayo de 1996), más conocido como Faker (en hangul, 페이커), es un jugador profesional surcoreano de League of Legends.
-                            <br><br>Faker es el único jugador de la historia en haber ganado el Campeonato Mundial de League of Legends en cinco ocasiones: en 2013, 2015, 2016, 2023 y 2024. </p>
-                    </div>
+                    <img src="assets/img/logitech-g.avif" alt="Patrocinador 1">
+                    <img src="assets/img/LG_Ultragear_Black.avif" alt="Patrocinador 2" class="sponsor-img-2">
+                    <img src="assets/img/hermanmiller-logo-lockup-black-digital.avif" alt="Patrocinador 3">
+                    <img src="assets/img/image_87.webp" alt="Patrocinador 4">
+                    <img src="assets/img/Spotify_Logo_RGB_Black.avif" alt="Patrocinador 5">
+                    <img src="assets/img/monster.avif" alt="Patrocinador 6">
+                    <img src="assets/img/mcdonalds.avif" alt="Patrocinador 7">
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid mt-5">
-        <form>
-            <input type="text" class="form-control mb-3" placeholder="Pon tu nombre">
-            <input type="email" class="form-control mb-3" placeholder="email">
-            <textarea class="form-control mb-3" placeholder="Puedes dejar informacion extra" rows="3"></textarea>
-            <button class="btn btn-lg btn-primary w-100 rounded-pill">Send Message</button>
-        </form>
+
+    <section class="container my-3 border border-3 border-dark w-75 w-md-50">
+        <div class="row border border-start-0 border-top-0 border-end-0 border-dark">
+            <div class="col pt-3">
+                <p class="text-dark ps-4 fs-4">PRÓXIMO PARTIDO</p>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-12 col-md-2 py-3 text-center border-end border-dark">
+                <img class="img-fluid" src="assets/img/lol-logo.svg" alt="" width="140">
+            </div> 
+            <div class="col-12 col-md-4 p-3 text-center text-md-start">
+                <img src="assets/img/lck.webp" alt=""   width="65">
+            </div>
+            <div class="col-12 col-md-6 pt-3 pb-0 text-center text-md-end">
+                <p class="text-dark">LCK Cup 2025 | Final Lower Bracket <br> 21/02 22:00 MX</p>
+            </div>
+        </div>
+    </section>
+
+    <div data-bs-spy="scroll" data-bs-target="#navbar-pag" class="container mt-4 text-center position-relative">
+        <div class="row">
+            <div class="col">
+                <h2 id="scrollspyHeading1">Equipos</h2>
+            </div>
+        </div>
+        <div class="row gx-lg-0 mt-3">
+            <div class="col-12 col-md-6 col-lg-3 mb-3">
+                <a href="lol.html"><img class="rounded" src="assets/img/lol-galery.jpg" alt="" width="216" height="288"></a>    
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-3">
+                <img class="rounded" src="assets/img/valorant.jpg" alt="" width="216" height="288">
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-3">
+                <img class="rounded" src="assets/img/rl.jpg" alt="" width="216" height="288">
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-3">
+                <img class="rounded" src="assets/img/Cs2_boxart.webp" alt="" width="216" height="288">
+            </div>
+        </div>
     </div>
 
     <footer>
-        <div class="container-fluid bg-white p-5 text-center">
+        <div class="container-fluid p-5 text-center mt-5">
             <div class="row">
-                <div class="col"><a href="#" class="text-decoration-none text-success">Empresa</a></div>
-                <div class="col"><a href="#" class="text-decoration-none text-success">Contacto</a></div>
-                <div class="col"><a href="#" class="text-decoration-none text-success">Redes Sociales</a></div>
-                <div class="col"><a href="#" class="text-decoration-none text-success">Acerca de nosotros</a></div>
+                <div class="col"><a href="#" class="text-decoration-none text-light">Empresa</a></div>
+                <div class="col"><a href="#" class="text-decoration-none text-light">Contacto</a></div>
+                <div class="col"><a href="#" class="text-decoration-none text-light">Redes Sociales</a></div>
+                <div class="col"><a href="about.html" class="text-decoration-none text-light">Acerca de nosotros</a></div>
             </div>
         </div>
     </footer>
