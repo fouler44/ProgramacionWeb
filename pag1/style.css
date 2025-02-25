@@ -18,7 +18,7 @@ section {
 .portada {
    width: 100%;
    display: block;
-   clip-path: inset(0 0 36px 0); /* Recorta 50px desde abajo */
+   clip-path: inset(0 0 36px 0);
 }
 
 .sponsor-bar {
@@ -31,20 +31,20 @@ section {
 
 .sponsor-track {
    display: flex;
-   gap: 30px; /* Espaciado entre logos */
+   gap: 30px; 
    width: max-content;
    animation: scroll 25s linear infinite;
 }
 
 .sponsor-track img {
-   height: 50px; /* Ajusta según necesites */
+   height: 50px;
    width: auto;
    object-fit: contain;
    padding: 0 2px; 
 }
 
 .sponsor-track img {
-   height: 20px; /* Ajusta según necesites */
+   height: 20px;
    width: auto;
    object-fit: contain;
    padding: 0 5px; 
@@ -52,7 +52,7 @@ section {
 
 @media (min-width: 768px) {
    .sponsor-track img {
-      height: 35px; /* Ajusta según necesites */
+      height: 35px;
       width: auto;
       object-fit: contain;
       padding: 0 10px; 
@@ -61,7 +61,7 @@ section {
 
 @media (min-width: 1200px) {
    .sponsor-track img {
-      height: 50px; /* Ajusta según necesites */
+      height: 50px;
       width: auto;
       object-fit: contain;
       padding: 0 10px; 
