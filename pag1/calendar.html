@@ -1,25 +1,22 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VaporTeam</title>
+    <title>Calendario - VaporTeam</title>
     <link rel="shortcut icon" href="/pag1/assets/img/icons8-combustible-de-dallas-50.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-
     <nav id="navbar-pag" class="navbar navbar-expand-lg bg-dark border-bottom border-body sticky-top"
         data-bs-theme="dark">
         <div class="container-fluid">
@@ -39,90 +36,80 @@
             </div>
         </div>
     </nav>
-
-    <div class="container-fluid p-0">
-        <div class="portada-container">
-            <img class="portada" src="assets/img/esport.jpg" alt="Esports">
-
-            <div class="sponsor-bar py-2 border ">
-                <div class="sponsor-track align-items-center">
-                    <img src="assets/img/logitech-g.avif" alt="Patrocinador 1"> 
-                    <img src="assets/img/LG_Ultragear_Black.avif" alt="Patrocinador 2" class="sponsor-img-2">
-                    <img src="assets/img/hermanmiller-logo-lockup-black-digital.avif" alt="Patrocinador 3">
-                    <img src="assets/img/image_87.webp" alt="Patrocinador 4">
-                    <img src="assets/img/Spotify_Logo_RGB_Black.avif" alt="Patrocinador 5">
-                    <img src="assets/img/monster.avif" alt="Patrocinador 6">
-                    <img src="assets/img/mcdonalds.avif" alt="Patrocinador 7">
-
-                    <img src="assets/img/logitech-g.avif" alt="Patrocinador 1">
-                    <img src="assets/img/LG_Ultragear_Black.avif" alt="Patrocinador 2" class="sponsor-img-2">
-                    <img src="assets/img/hermanmiller-logo-lockup-black-digital.avif" alt="Patrocinador 3">
-                    <img src="assets/img/image_87.webp" alt="Patrocinador 4">
-                    <img src="assets/img/Spotify_Logo_RGB_Black.avif" alt="Patrocinador 5">
-                    <img src="assets/img/monster.avif" alt="Patrocinador 6">
-                    <img src="assets/img/mcdonalds.avif" alt="Patrocinador 7">
-                </div>
+    <header class="container mt-4">
+        <div class="row text-center mb-3">
+            <div class="col">
+                <h2>Calendario de Partidos</h2>
             </div>
         </div>
-    </div>
+    </header>
+    <section class="container mb-5" style="background-color: white;">
+        <div id="matches-container" class="row">
 
-    <section id="proximo-partido-container" class="container my-3 border border-3 border-dark w-75 w-md-50">
-        <div class="row border border-start-0 border-top-0 border-end-0 border-dark">
-            <div class="col pt-3">
-                <p class="text-dark ps-4 fs-4">PRÓXIMO PARTIDO</p>
-            </div>
-        </div>
+            <div class="col-12 col-md-6 mx-auto mb-4">
+                <div class="card skeleton shadow-sm">
+                    <div class="card-body">
 
-        <div id="matches-container">
+                        <div class="text-center mb-3">
+                            <p class="placeholder-glow mb-1"><span class="placeholder col-8"></span></p>
+                            <p class="placeholder-glow small"><span class="placeholder col-4"></span></p>
+                        </div>
 
-            <div class="row align-items-center">
-                <div class="col-12 col-md-2 py-3 text-center border-end border-dark">
-                    <div class="placeholder-glow">
-                        <span class="placeholder bg-secondary col-8" style="height: 70px;"></span>
-                    </div>
-                </div> 
-                <div class="col-12 col-md-4 p-3 text-center text-md-start">
-                    <div class="placeholder-glow">
-                        <span class="placeholder bg-secondary col-4" style="height: 40px;"></span>
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="text-center">
+                                <div class="skeleton-img bg-secondary rounded" style="width: 50px; height: 50px;"></div>
+                            </div>
+                            <div class="text-center mx-3">
+                                <span class="placeholder col-4"></span>
+                            </div>
+                            <div class="text-center">
+                                <div class="skeleton-img bg-secondary rounded" style="width: 50px; height: 50px;"></div>
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <p class="placeholder-glow"><span class="placeholder col-8"></span></p>
+                            <p class="placeholder-glow"><span class="placeholder col-10"></span></p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 pt-3 pb-0 text-center text-md-end">
-                    <div class="placeholder-glow">
-                        <span class="placeholder bg-secondary col-8"></span>
-                        <span class="placeholder bg-secondary col-6"></span>
+            </div>
+            <div class="col-12 col-md-6 mx-auto mb-4">
+                <div class="card skeleton shadow-sm">
+                    <div class="card-body">
+
+                        <div class="text-center mb-3">
+                            <p class="placeholder-glow mb-1"><span class="placeholder col-8"></span></p>
+                            <p class="placeholder-glow small"><span class="placeholder col-4"></span></p>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="text-center">
+                                <div class="skeleton-img bg-secondary rounded" style="width: 50px; height: 50px;"></div>
+                            </div>
+                            <div class="text-center mx-3">
+                                <span class="placeholder col-4"></span>
+                            </div>
+                            <div class="text-center">
+                                <div class="skeleton-img bg-secondary rounded" style="width: 50px; height: 50px;"></div>
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <p class="placeholder-glow"><span class="placeholder col-8"></span></p>
+                            <p class="placeholder-glow"><span class="placeholder col-10"></span></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <div data-bs-spy="scroll" data-bs-target="#navbar-pag" class="container mt-4 text-center position-relative">
-        <div class="row">
-            <div class="col">
-                <h2 id="scrollspyHeading1">Equipos</h2>
-            </div>
-        </div>
-        <div class="row gx-lg-0 mt-3">
-            <div class="col-12 col-md-6 col-lg-3 mb-3">
-                <a href="lol.html"><img class="rounded" src="assets/img/lol-galery.jpg" alt="" width="216" height="288"></a>    
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 mb-3">
-                <img class="rounded" src="assets/img/valorant.jpg" alt="" width="216" height="288">
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 mb-3">
-                <img class="rounded" src="assets/img/rl.jpg" alt="" width="216" height="288">
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 mb-3">
-                <img class="rounded" src="assets/img/Cs2_boxart.webp" alt="" width="216" height="288">
-            </div>
-        </div>
-    </div>
-
     <footer class="bg-dark text-light py-5">
         <div class="container-fluid">
-
+            
             <div class="row justify-content-between mb-5">
-
+              
                 <div class="col-md-4 d-flex justify-content-center justify-content-md-start align-items-center ps-md-5">
                     <img src="assets/img/g2-logo-clear.avif" alt="Gen.G Esports" width="50" height="50">
                 </div>
@@ -152,6 +139,7 @@
                 </div>
             </div>
 
+
             <div class="row mt-4 border-top pt-3">
                 <div class="col-12 text-center">
                     <p class="mb-0">COPYRIGHT © 2025, VaporTeam</p>
@@ -160,7 +148,7 @@
         </div>
     </footer>
 
-    <script src="js/proximoPartido.js"></script>
+    <script src="js/calendar.js"></script>
 </body>
 
 </html>

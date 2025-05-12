@@ -1,89 +1,144 @@
- body {
+body {
     background-color: white;
- }
-
+}
 footer {
-   background-color: rgb(75, 75, 75);
+    background-color: rgb(75, 75, 75);
 }
-
 section {
-   background-color: ghostwhite;
+    background-color: ghostwhite;
 }
-
 .portada-container {
-   position: relative;
-   width: 100%;   
+    position: relative;
+    width: 100%;
 }
-
 .portada {
-   width: 100%;
-   display: block;
-   clip-path: inset(0 0 36px 0);
+    width: 100%;
+    display: block;
+    clip-path: inset(0 0 36px 0);
 }
-
 .sponsor-bar {
-   width: 100%;
-   overflow: hidden;
-   background: white;
-   position: absolute;
-   bottom: 36px;
+    width: 100%;
+    overflow: hidden;
+    background: white;
+    position: absolute;
+    bottom: 36px;
 }
-
 .sponsor-track {
-   display: flex;
-   gap: 30px; 
-   width: max-content;
-   animation: scroll 25s linear infinite;
+    display: flex;
+    gap: 30px;
+    width: max-content;
+    animation: scroll 25s linear infinite;
 }
-
 .sponsor-track img {
-   height: 50px;
-   width: auto;
-   object-fit: contain;
-   padding: 0 2px; 
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    padding: 0 2px;
 }
-
 .sponsor-track img {
-   height: 20px;
-   width: auto;
-   object-fit: contain;
-   padding: 0 5px; 
+    height: 20px;
+    width: auto;
+    object-fit: contain;
+    padding: 0 5px;
 }
-
 @media (min-width: 768px) {
-   .sponsor-track img {
-      height: 35px;
-      width: auto;
-      object-fit: contain;
-      padding: 0 10px; 
-   }
+    .sponsor-track img {
+        height: 35px;
+        width: auto;
+        object-fit: contain;
+        padding: 0 10px;
+    }
 }
-
 @media (min-width: 1200px) {
-   .sponsor-track img {
-      height: 50px;
-      width: auto;
-      object-fit: contain;
-      padding: 0 10px; 
-   }
+    .sponsor-track img {
+        height: 50px;
+        width: auto;
+        object-fit: contain;
+        padding: 0 10px;
+    }
 }
-
 @keyframes scroll {
-   from {
-       transform: translateX(0);
-   }
-   to {
-       transform: translateX(-50%);
-   }
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
 }
-
 .sponsor-img-2 {
-   height: 30px !important;
-   width: auto;   
+    height: 30px !important;
+    width: auto;
+}
+.winners {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
 
-.winners {
-   width: 100%;
-   height: 300px;
-   object-fit: cover;
+/* Estilos para el skeleton loader */
+.skeleton {
+    position: relative;
+    overflow: hidden;
+}
+
+.skeleton::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
+    animation: shimmer 1.5s infinite;
+}
+
+.skeleton-img {
+    height: 250px;
+    background-color: #e2e2e2;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Fuente general para textos comunes */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Fuente para títulos, botones y elementos destacados */
+h1, h2, h3,
+.navbar-brand,
+button,
+.cta,
+footer h1, footer h2 {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px; /* opcional, para mejor apariencia */
+    text-transform: uppercase; /* opcional, estilo más fuerte */
+}
+
+.navbar a {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.2rem; /* ajusta según lo necesites */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.placeholder {
+    display: inline-block;
+    height: 1em;
+    background-color: #e2e2e2;
+    border-radius: 0.2em;
+}
+
+.placeholder-glow .placeholder {
+    animation: shimmer 1.5s infinite;
 }
