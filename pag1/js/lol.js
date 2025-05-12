@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     
-    const API_URL = 'http://localhost:8000/api/players?juego=League of Legends';
+    const API_URL = 'https://backend-segundoparcial-hbyd.onrender.com/api/players?juego=League of Legends';
     
     async function loadPlayers() {
         try {

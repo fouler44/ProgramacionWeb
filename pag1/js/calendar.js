@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const API_URL = 'http://localhost:8000/api/matches';
+  const API_URL = 'https://backend-segundoparcial-hbyd.onrender.com/api/matches';
 
   async function loadMatches() {
     try {
